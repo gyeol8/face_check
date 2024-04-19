@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>컴퓨터 소프트웨어과 출석</title>
+    <style>
+        h1 {
+            text-align: center;
+            height: 3%;
+            margin-top: 0%;
+        }
+        body, html {
+            margin : auto;
+            padding: 10px;
+            overflow: hidden;
+            height: 100%;
+        }
+        img {
+            margin : auto;
+            display: block;
+            width:  1300px;
+            height: 85%;
+        }
+        .btn-container {
+            text-align: right; /* 로그인 버튼을 오른쪽으로 정렬 */
+        }
+        .btn {
+            background-color: #f1a9d1;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            text-align: right;
+            font-size: 150%;
+        }
+    </style>
+</head>
+<body>
+    <div class="btn-container">
+        <a href="./login.html"><button class="btn">로그인</button></a>
+    </div>
+    <h1>얼굴인식 출석</h1>
+    <img src="{{ url_for('video_feed') }}">
+</body>
+</html>
