@@ -1,0 +1,29 @@
+h1 {
+    text-align: center;
+    height: 3%;
+    margin-top: 0%;
+}
+body, html {
+    margin : auto;
+    padding: 10px;
+    overflow: hidden;
+    height: 100%;
+}
+img {
+    margin : auto;
+    display: block;
+    width:  1300px;
+    height: 85%;
+}
+.btn-container {
+    text-align: right; /* 로그인 버튼을 오른쪽으로 정렬 */
+}
+.btn {
+    background-color: #f1a9d1;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    text-align: right;
+    font-size: 150%;
+}

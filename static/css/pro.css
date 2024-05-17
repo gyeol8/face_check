@@ -1,0 +1,46 @@
+table {
+                
+    text-align: center;
+    border-collapse: collapse;
+    margin-left:auto; 
+    margin-right:auto;
+    overflow-y: scroll; /* 수직 스크롤바 추가 */
+    overflow-x: auto; /* 수평 스크롤바 추가 */
+    overflow: scroll;
+}
+th, td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: center;
+}
+th {
+    background-color: #f2f2f2;
+}
+.container {
+    width: 100%;
+    border: 5px solid rgb(0, 0, 0);
+    overflow-y: scroll; /* 수직 스크롤바 추가 */
+    overflow-x: auto; /* 수평 스크롤바 추가 */
+    overflow: scroll;
+    background-color: #f2f2f2;
+}
+h1 {
+    text-align: center;
+}
+.btn-container {
+    text-align: right; /* 로그인 버튼을 오른쪽으로 정렬 */
+}
+.btn {
+    background-color: #f1a9d1;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    text-align: right;
+    font-size: 150%;
+}
+a {
+    margin: 50px;
+    margin-left: 100px;
+    text-align: center;
+}
