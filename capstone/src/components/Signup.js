@@ -6,6 +6,7 @@ const Signup = () => {
   const [name, setName] = useState('');
   const [studentID, setStudentID] = useState('');
   const [department, setDepartment] = useState('');
+  const [position, setPosition] = useState(''); // 직급 상태 추가
   const [email, setEmail] = useState('');
   const [password, setPassword] = useState('');
   const [confirmPassword, setConfirmPassword] = useState('');
@@ -56,6 +57,7 @@ const Signup = () => {
       Name: name,
       Student_ID: studentID,
       Department: department,
+      Position: position, // 직급 추가
       Image_Folder: imageFolder
     };
 
@@ -104,6 +106,18 @@ const Signup = () => {
             onChange={(e) => setDepartment(e.target.value)}
             required
           />
+        </div>
+        <div className="form-group">
+          <label>직급:</label>
+          <select
+            value={position}
+            onChange={(e) => setPosition(e.target.value)}
+            required
+          >
+            <option value="">직급을 선택하세요</option>
+            <option value="교수">교수</option>
+            <option value="학생">학생</option>
+          </select>
         </div>
         <div className="form-group">
           <label>이메일:</label>
