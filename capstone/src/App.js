@@ -6,7 +6,6 @@ import Signup from './components/Signup';
 import AttendanceTable from './components/Attendance';
 import WebcamCapture from './components/WebcamCapture';
 import Pro from './components/Pro';
-import './App.css';
 
 
 function App() {

@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import './Pro.css';
+import './css/Pro.css'
 import juhyeonsuImage from '../images/juhyeonsu.jpg';
 import choiwoosikImage from '../images/choiwoosik.jpg';
 import kimgahyunImage from '../images/kimgahyun.jpg';
