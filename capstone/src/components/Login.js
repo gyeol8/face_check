@@ -1,12 +1,14 @@
-//test
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 import WebcamCapture from './WebcamCapture';
+import Pro from './Pro';
+import './Login.css';
 
 const Login = () => {
   const [email, setEmail] = useState('');
   const [password, setPassword] = useState('');
   const [loggedIn, setLoggedIn] = useState(false);
+  const [userType, setUserType] = useState('student'); // 학생을 기본값으로 설정
 
   const handleSubmit = (event) => {
     event.preventDefault();
@@ -18,7 +20,7 @@ const Login = () => {
   return (
     <div className="login-container">
       {loggedIn ? (
-        <WebcamCapture />
+        userType === 'student' ? <WebcamCapture /> : <Pro />
       ) : (
         <>
           <h2>Login</h2>
@@ -40,6 +42,13 @@ const Login = () => {
                 onChange={(e) => setPassword(e.target.value)}
                 required
               />
+            </div>
+            <div className="form-group">
+              <label>User Type:</label>
+              <select value={userType} onChange={(e) => setUserType(e.target.value)}>
+                <option value="student">Student</option>
+                <option value="professor">Professor</option>
+              </select>
             </div>
             <button type="submit">Login</button>
           </form>
