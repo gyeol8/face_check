@@ -1,0 +1,14 @@
+.webcam-container {
+  text-align: center;
+  margin: auto;
+  }
+  
+  .webcam-container div {
+    margin-bottom: 10px; /* 요소 간의 간격 조정 */
+  }
+  
+  button {
+    margin: 5px; /* 버튼 간의 간격 조정 */
+    width: 60%;
+  }
+  
